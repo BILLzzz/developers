@@ -237,6 +237,10 @@
                 <b>User</b> [<a href="#JSON-Elements-User">User</a>]<br/>
                 The author of the review.
               </li>
+              <li>
+                <b>IsVerified</b> [bool]<br />
+                True if the review is made using one of Trustpilot's feedback services, otherwise false.
+              </li>
             </ul>
         
             <h4 id="JSON-Elements-TrustScore">TrustScore</h4>
@@ -273,10 +277,6 @@
                 <b>ImageUrls</b> [Hash of string, string]<br/>
                 Urls for the profile image in different sizes. If the user does not have a profile picture, the url will point to a default profile image.<br />
                 The sizes can be found on these keys: "i24", "i35", "i64", "i73".
-              </li>
-              <li>
-                <b>IsVerified</b> [bool]<br />
-                True if there is submitted an order id along with the review, otherwise false.
               </li>
               <li>
                 <b>Locale</b> [string]<br />

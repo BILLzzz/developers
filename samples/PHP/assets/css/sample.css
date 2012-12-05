@@ -64,6 +64,8 @@
   border-bottom:1px solid #DDDDDD;
   margin:0 10px 15px;
   padding:0 0 10px;
+  position: relative ;
+  clear: both ;
 }
 
 .tp-box section.reviews article a {
@@ -77,11 +79,11 @@
 
 .tp-box time {
   display:block;
-  float:right;
   -moz-opacity:0.6;
   opacity:0.6;
-  position:relative;
-  top:-2px;
+  position:absolute;
+  top:0;
+  right:0;
   text-transform:lowercase;
 }
 
@@ -147,9 +149,4 @@
   height:12px;
   margin:6px 0 0 10px;
   width:12px;
-}
-
-.tp-box div.clear {
-  clear:both;
-  font-size:1px;
 }

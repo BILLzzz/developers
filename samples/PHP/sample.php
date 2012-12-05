@@ -42,7 +42,6 @@
           <?php echo $review->User->Name; ?><br />
           <?php echo $review->User->City; ?>
         </p>
-        <div class="clear"></div>
       </article>
     <?php endfor; ?>
     </section>

@@ -34,7 +34,7 @@
       <?php $review = $json->Reviews[$i]; ?>
       <article>
         <img src="<?php echo $review->TrustScore->StarsImageUrls->small; ?>" alt="review stars"/>
-        <time datetime="<?php echo $review->Created->UnixTime; ?>"></time>
+        <time datetime="<?php echo date('c',$review->Created->UnixTime); ?>"><?php echo $review->Created->HumanDate; ?></time>
         <h3><?php echo $review->Title; ?></h3>
         <p class="desc"><?php echo substr($review->Content, 0, $settings['review_max_length']); ?></p>
         <img src="<?php echo $review->User->ImageUrls->i24; ?>" alt="<?php echo $review->User->Name; ?>" class="user-img" />

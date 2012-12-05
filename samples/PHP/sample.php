@@ -28,8 +28,8 @@
       <p class="review-count"><?php echo $json->ReviewCount->Total; ?> customers has written a review on Trustpilot</p>
     </header>
   
-    <h2>Latest reviews</h2>
     <section class="reviews">
+    <h1>Latest reviews</h1>
     <?php for($i = 1; $i <= $settings['review_amount']; $i++) : ?>
       <?php $review = $json->Reviews[$i]; ?>
       <article>

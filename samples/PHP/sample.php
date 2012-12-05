@@ -16,6 +16,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Trustpilot sample plugin</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/sample.css" />
 </head>
 

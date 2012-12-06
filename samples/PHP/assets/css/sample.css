@@ -23,6 +23,11 @@
   position:relative;
   width:178px;
 }
+.tp-box.horizontal{
+  width: 800px ;
+  float: none ;
+  clear: both ;
+}
 
 .tp-box header {
   -webkit-border-top-left-radius: 5px; 
@@ -33,6 +38,10 @@
            border-radius-topright: 5px;
   text-align:center;
   padding:6px 10px 12px;
+}
+.tp-box.horizontal header{
+	width: 178px ;
+	float: left ;
 }
 
 .tp-box header h1 { 
@@ -58,6 +67,10 @@
   height:none;
   overflow-y:auto;
   margin:0 0 25px;
+}
+.tp-box.horizontal section.reviews{
+  height: 200px ;
+  overflow-y: auto ;
 }
 
 .tp-box section.reviews article {

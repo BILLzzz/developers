@@ -21,11 +21,11 @@
 </head>
 
 <body>
-  <div class="tp-box" id="tp-iframe-widget">
+  <div class="tp-box<?php if(isset($_GET,$_GET['horizontal'])){?> horizontal<?php } ?>" id="tp-iframe-widget">
     <header>
       <h1><?php echo $json->TrustScore->Human; ?></h1>
       <img src="<?php echo $json->TrustScore->StarsImageUrls->large; ?>" alt="stars"/>
-      <p class="review-count"><?php echo $json->ReviewCount->Total; ?> customers has written a review on Trustpilot</p>
+      <p class="review-count"><?php echo $json->ReviewCount->Total; ?> customers have written a review on Trustpilot</p>
     </header>
   
     <section class="reviews">
@@ -51,5 +51,10 @@
       <span class="pilot">pilot</span>
     </a>
   </div>
+<?php if(isset($_GET,$_GET['horizontal'])){ ?>
+  <p><a href="./sample.php">Vertical</a></p>
+<?php }else{ ?>
+  <p style="clear:both;"><a href="./sample.php?horizontal">Horizontal</a></p>
+<?php } ?>
 </body>
 </html>

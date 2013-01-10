@@ -45,11 +45,7 @@
       </article>
     <?php endfor; ?>
     </section>
-    <a class="footer" href="<?php echo $json->ReviewPageUrl; ?>" target="_blank">
-      <span class="logo"></span>
-      <span class="trust">Trust</span>
-      <span class="pilot">pilot</span>
-    </a>
+    <a class="footer" href="<?php echo $json->ReviewPageUrl; ?>" target="_blank">Trust<span class="pilot">pilot</span></a>
   </div>
 <?php if(isset($_GET,$_GET['horizontal'])){ ?>
   <p><a href="./sample.php">Vertical</a></p>

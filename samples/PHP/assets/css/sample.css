@@ -66,7 +66,7 @@
   display:block;
   height:none;
   overflow-y:auto;
-  margin:0 0 25px;
+  margin:0;
 }
 .tp-box.horizontal section.reviews{
   height: 200px ;
@@ -124,7 +124,6 @@
 }
 
 .tp-box a.footer {
-  background:#DDDDDD;
   -webkit-border-bottom-right-radius: 5px;
       -moz-border-radius-bottomright: 5px;
            border-radius-bottomright: 5px;
@@ -134,32 +133,15 @@
            border-radius-bottomleft: 5px;
   font-size:11px;
   font-weight:700;
-  width:100%;
-  padding:0 0 4px;
-  position:absolute; bottom:0;
+  display: block ;
   text-transform:uppercase;
   text-decoration:none;
-}
-
-.tp-box a.footer span {
-  display:inline-block;
-  float:left;
-  margin:5px 0 0;
-}
-
-.tp-box a.footer span.trust {
   color:#000;
-  margin:5px 0 0 4px;
+  line-height: 22px ;
+  padding-left: 16px ;
+  background: #ddd url(https://github.com/trustpilot/developers/raw/master/assets/img/icon_flat_mini.png) 2px center no-repeat;
 }
 
 .tp-box a.footer span.pilot {
   color:#444;
-}
-
-.tp-box a.footer span.logo 
-{
-  background:url(https://github.com/trustpilot/developers/raw/master/assets/img/icon_flat_mini.png) no-repeat;
-  height:12px;
-  margin:6px 0 0 10px;
-  width:12px;
 }

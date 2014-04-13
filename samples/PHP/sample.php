@@ -1,7 +1,11 @@
 <?php
-  // The JSON feed is gzipped. This is needed to unpack it before using
-  require('inc/gzdecode.php');
-  
+  // If PHP >= 5.4 we'll have gzdecode function, if PHP >= 4.0.1 we use gzuncompress
+  if(!function_exists("gzdecode")) {
+	  function gzdecode($data) {
+	  	return gzuncompress($data);
+	  }
+  }
+
   // Get the JSON feed and gzunpack
   $file = gzdecode( file_get_contents("http://s.trustpilot.com/tpelements/917278/f.json.gz") );
   
